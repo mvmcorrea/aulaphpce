@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <title>Curso de GIT Git Hub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <title>Curso de PHP</title>
+
+    <meta name="viewport" content="width=device-width" charset=utf-8>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
-</head>
-<body>
-    <h1>Olá, mundo!</h1>
-    <!-- Javascript -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
-    <?php
-        phpinfo();
-    ?>
+</head>
+
+<body>
+
+<h1>Site Simples com PHP</h1>
+
+<?php include 'menu.php'?>
+
+<?php
+    if(isset($_GET["pagina"]))
+    {
+        $pagina = $_GET["pagina"];
+    }else{
+        $pagina = 'home.php';
+    }
+    require_once($pagina);
+?>
+
+<div><p>Todos os Direitos Reservados - <2015></p></div>
 </body>
+
 </html>
