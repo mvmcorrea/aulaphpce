@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width" charset=utf-8>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-1.11.2.js"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
