@@ -19,17 +19,19 @@
 
 <?php include 'menu.php'?>
 
-<?php
-    if(isset($_GET["pagina"]))
-    {
-        $pagina = $_GET["pagina"];
-    }else{
-        $pagina = 'home.php';
-    }
-    require_once($pagina);
-?>
+<div class="container">
+        <?php
+            if(isset($_GET["pagina"]))
+            {
+                $pagina = $_GET["pagina"];
+            }else{
+                $pagina = 'home.php';
+            }
+            require_once($pagina);
+        ?>
+</div>
 
-<div><p>Todos os Direitos Reservados - <2015></p></div>
+<div class="panel-footer"><p>Todos os Direitos Reservados - <2015></p></div>
 </body>
 
 </html>
